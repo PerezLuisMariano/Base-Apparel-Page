@@ -15,21 +15,32 @@
             <img class="logo" src="./assets/images/logo.svg" alt="logo">
         </header>
         <main>
-            <img class="hero" src="./assets/images/hero-mobile.jpg" alt="hero">
+            
+            <picture class="hero" >
+                <source media="(min-width: 1024px)" srcset="./assets/images/hero-desktop.jpg">
+                <img src="./assets/images/hero-mobile.jpg" alt="hero-mobile">
+            </picture>
             <section class="content">
                 <h1 class="content__title" >We're <span>coming soon</span></h1>
                 <p class="content__paragraph" > Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
                 <div class="content__input" >
                     <form>
-                        <input type="text" placeholder="Email Address" id="textToSend" />
-                        <button id="buttonToSendText"><span></span></button>
+                        <input type="text" placeholder="Email Address" autocomplete="off" id="textToSend" />
+                        <span class="icon-error" id="iconError"></span>
+                        <button type="button" id="buttonToSendText"><span></span></button>
                     </form>
                     <p id="outputToRecive">
-                        Please provide a valid email
                     </p>
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <section class="attribution">
+                <h2>Challenge by<a href="https://www.frontendmentor.io/profile/PerezLuisMariano" target="_blank"> Frontend Mentor</a><br>
+                    Coded by    <a href="https://github.com/PerezLuisMariano" target="_blank"> Luis Mariano</a>
+                </h2>   
+            </section>
+        </footer>
+        <script src="./script/script.js" ></script>
     </body>
 </html>
