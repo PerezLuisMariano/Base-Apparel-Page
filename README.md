@@ -1,7 +1,7 @@
 ## Frontend Mentor - Base Apparel page
 
 ### Screenshot
-![version-desk](design/me/)
+![version-desk](design/design.png)
 
 
 ### Links
